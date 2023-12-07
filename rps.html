@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scisor</title>
+    <link rel="stylesheet" href="rps.css">
+</head>
+
+<body>
+    <h1>
+        Rock Paper Scisor
+    </h1>
+    <button onclick="
+        playgame('rock');
+    " class="move-button"><img src="img/rock-emoji.png" class="move-icon"></button>
+
+    <button onclick="
+        playgame('paper');
+    " class="move-button"><img src="img/paper-emoji.png" class="move-icon"></button>
+
+    <button onclick="
+       playgame('scissors')
+    " class="move-button"><img src="img/scissors-emoji.png" class="move-icon"></button>
+
+    <p class="result css-result"></p>
+
+    <p class="selection"></p>
+
+    <p class="score"></p>
+    
+    <button onclick="
+        score.win = 0;
+        score.loss = 0;
+        score.tie = 0;
+        updateScore();
+    " class="reset">Reset Score</button>
+    <br><br>
+    <script src="rps.js">
+        
+    </script>
+</body>
+</html>
